@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import time
 
 # LinkedIn login credentials
-USERNAME = "Bobsmikkelopmetjekop@gmail.com"
+USERNAME = "Bobsmikkelkop@gmail.com"
 PASSWORD = "Fruitschaal3!"
 
 
@@ -39,10 +39,10 @@ def login_to_linkedin(driver):
     password_field.send_keys(Keys.RETURN)
 
     # Wait for the LinkedIn homepage to load
-    print("Logging in...")
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, "//input[contains(@aria-label, 'Search')]")))
-    print("Logged in successfully.")
+    # print("Logging in...")
+    # WebDriverWait(driver, 10).until(
+    #     EC.presence_of_element_located((By.XPATH, "//input[contains(@aria-label, 'Search')]")))
+    # print("Logged in successfully.")
 
 
 # Fetch the profile HTML from LinkedIn
